@@ -1,0 +1,471 @@
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10%;
+  background-color: #747bff;
+} 
+
+header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+}
+
+header h2 span {
+  color: white;
+}
+
+.github-icon{
+  font-size: 1.5rem;
+  color: black;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-right: 1.5rem;
+}
+
+header nav ul li .link {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+  transition: all 0.5s ease;
+}
+
+header nav ul li .link:hover {
+  color: white;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: goldenrod;
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.open-sidebar{
+  display: block;
+  font-size: 1.5rem;
+  color: black;
+  display: none;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 215px;
+  width: 250px;
+  z-index: 999;
+  background-color:  #747bff;
+  backdrop-filter: blur(5px);
+  box-shadow: -10px 0 20px rgba(0,0,0,0.2);
+  padding: 10px 10px; 
+  display: none;
+}
+
+.sidebar ul{
+  width: 100%;
+  margin-block: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+.sidebar .close-sidebar{
+  font-size: 2rem;
+  color: black;
+  font-weight: 900;
+}
+
+.sidebar ul li{
+  width: 100%;
+  color: white;
+  margin-block-start: 10px;
+  margin-inline-start: 10px;
+}
+
+.sidebar ul li {
+  width: 100%;
+  margin-top: 15px;
+}
+
+
+.sidebar ul button{
+  margin-block-start: 15px;
+  margin-inline-start: 10px;
+}
+
+section.home-main{
+  margin-inline: 5%;
+}
+
+section .welcome{
+  text-align: center;
+  margin-top: 180px;
+  margin-inline: auto;
+  max-width: 600px;
+}
+
+.welcome h1{
+  font-size: calc(35px + 2vw);
+  font-weight: 700;
+  line-height: 1.2;
+  color: blue;
+}
+
+.welcome p{
+  font-size: 20px;
+  line-height: 1.2;
+  font-style: italic;
+  margin-top: 10px;
+  color: blueviolet;
+}
+
+.btn-home{
+  margin-top: 20px;
+  margin-inline: auto;
+  max-width: 350px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.btn-home button{
+  margin-top: 10px;
+}
+
+.btn-home button:hover{
+  background-color: blue;
+  color: white;
+}
+
+footer{
+  background-color: #747bff;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+footer p{
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.heart{
+  font-size: 1.2rem;
+  color: red;
+}
+
+footer a{
+  color: white;
+  font-weight: 700;
+}
+
+footer p a:hover{
+  color: black;
+}
+
+section.main-repo{
+  margin-inline: 5%;
+  margin-block: 90px;
+}
+
+.repo-head{
+  text-align: center;
+  margin-top: 20px;
+  margin-inline: auto;
+  max-width: 600px;
+  line-height: 1;
+}
+
+.repo-head h2{
+  font-size: 2rem;
+  font-weight: 700;
+  color: blue;
+}
+
+.repo-head p{
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 10px;
+  color: blueviolet;
+}
+
+.repo-search{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.search-repo{
+  width: 250px;
+  border: 1px solid blueviolet;
+  border-radius: 5px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+
+}
+
+.search-repo input{
+  border-radius: 5px;
+  width: 80%;
+  border: none;
+  margin-right: 10px;
+  outline: none;
+  padding-inline: 10px;
+  border-radius: 5px;
+  padding-block: 10px;
+}
+
+.repo-search button{
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.reload-btn{
+  font-weight: 900;
+}
+
+div.no-repo-found{
+  text-align: center;
+  margin-top: 10px;
+  display: none;
+}
+
+.no-repo-found p{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: red;
+}
+
+.no-repo-found p span{
+  color: blue;
+}
+
+
+section.repo{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10px auto;
+  width: 100%;
+}
+
+.repo-item{
+  width: 500px;
+  max-width: 500px;
+  padding: 20px 20px;
+  border: 1px dotted rgba(126, 65, 184, 0.72);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+  margin-block: 10px;
+  
+}
+
+.repo-item-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.repo-item-top h2{
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: blue;
+  margin-block: 10px;
+}
+
+.repo-item-top p{
+  font-size: 1rem;
+  font-style: italic;
+  color: blueviolet;
+  border: 1px solid blueviolet;
+  padding: 1px 10px;
+  border-radius: 20px;
+}
+
+.repo-item p{
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+
+.repo_details{
+  width: 80%;
+  border: 1px solid blueviolet;
+  border-radius: 5px;
+  border-radius: 10px;
+  padding: 20px 20px;
+  margin: auto;
+  margin-top: 150px;
+}
+
+.repo_details h1{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: blue;
+  text-align: center;
+}
+
+.repo_details .details__name p{
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.repo_details .details__info{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.details__info .details__info__item{
+  border: 1px solid blueviolet;
+  margin-top: 20px;
+  width: 100px;
+}
+
+div.repo_url{
+  margin-top: 55px;
+  text-align: center;
+
+}
+
+.repo_details a{
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid blueviolet;
+  background-color: goldenrod;
+  color: black;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.btn-repo{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: auto;
+  width: 150px;
+
+}
+
+section .button-control{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 80px;
+  font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1125px){
+  header {
+    padding: 1rem 5%;
+  }
+
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+  .repo-item{
+    padding: 10px 10px;
+    max-width: 400px;
+    width: 350px;
+  }
+
+  .repo-item h2{
+    font-size: 1rem;
+  }
+
+  .repo-item p{
+    font-size: 0.8rem;
+  }
+
+}
+
+@media screen and (max-width: 876px){
+  .open-sidebar{
+    display: block;
+  }
+
+  header nav .large-screen, .btn-large-screen{
+    display: none;
+  }
+
+  .repo-item{
+    min-width: 300px;
+  }
+
+  .repo-item p{
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .sidebar{
+    display: none;
+  }
+
+  .repo-item{
+    padding: 10px 10px;
+    width: 100%;
+  }
+
+  .repo-item h2{
+    margin-block: 0;
+  }
+
+  .repo-item p{
+    margin-top: 0;
+  }
+
+}
+
+
+
+
+
+
+
