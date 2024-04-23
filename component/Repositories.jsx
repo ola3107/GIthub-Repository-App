@@ -134,13 +134,21 @@ const Repositories = () => {
                 <p>Here you can view all the repositories available.</p>
             </section>
             <form className="repo-search" onSubmit={handleSubmit}>
+                <button onClick={handleReset}>reset</button>
                 <div className="search-repo">
                     <input type="text" placeholder="Search Repositories" value={value} onChange={(e) => setValue(e.target.value)}/>
                     <button type="submit" className="search-icon">
                         <FaSearch />
                     </button>
                 </div>
-                <button onClick={handleReset}>reset</button>
+                <div className="button-control">
+                <select onChange={(e) => handleFilter(e.target.value)}>
+                    <option value="">filter by language</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="CSS">CSS</option>
+                    <option value="HTML">HTML</option>
+                </select>
+                </div>
             </form>
             <div className="no-repo-found">
                 <p>Sorry!!!, No Repo for <span>{value}</span> found</p>
@@ -153,14 +161,7 @@ const Repositories = () => {
                 <button onClick={handleNextPage}>next</button>
             </div>
 
-            <div className="button-control">
-                <select onChange={(e) => handleFilter(e.target.value)}>
-                    <option value="">filter by language</option>
-                    <option value="JavaScript">JavaScript</option>
-                    <option value="CSS">CSS</option>
-                    <option value="HTML">HTML</option>
-                </select>
-            </div>
+            
         </section>
     );
 }
