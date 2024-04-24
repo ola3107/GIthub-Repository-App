@@ -39,6 +39,9 @@ const Header = () => {
                     <li onClick={closeSidebar}>
                         <Link to="/Repositories" className='link'>Repositories</Link>
                     </li>
+                    <li>
+                        <Link to="/FourOfour" className='link'>404</Link>
+                    </li>
                     <button onClick={redirectToGithub}>Go To Github</button>
                 </ul>
             </nav>
