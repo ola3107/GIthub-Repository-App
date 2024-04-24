@@ -391,6 +391,23 @@ section .button-control select{
 
 }
 
+.error-page{
+  text-align: center;
+  margin-top: 200px;
+  padding-inline: 5%;
+}
+
+.error-page h1{
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.error-page p{
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-top: 10px;
+}
+
 
 
 

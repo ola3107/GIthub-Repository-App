@@ -7,6 +7,7 @@ import Footer from '../component/footer.jsx';
 import Repositories from '../component/Repositories.jsx';
 import SingleRepoDetails from '../component/SingleRepoDetails.jsx';
 import AppOutlet from '../component/AppOutlet.jsx';
+import FourOfour from '../component/FourOfour.jsx';
 
 function App() {
   const [repos, setRepos] = useState([]);
@@ -32,6 +33,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Repositories" element={<Repositories repos={repos}/>} />
+        <Route path="/FourOfour" element={<FourOfour />} />
         <Route path='/SingleRepoDetails' element={<AppOutlet />}>
           <Route path="/SingleRepoDetails/:repoName" element={<SingleRepoDetails />} />
         </Route>
