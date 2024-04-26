@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from '../component/Header.jsx';
-import Home from '../component/Home.jsx';
+import Home from '../Pages/Home.jsx';
 import Footer from '../component/footer.jsx';
-import Repositories from '../component/Repositories.jsx';
-import SingleRepoDetails from '../component/SingleRepoDetails.jsx';
+import Repositories from '../Pages/Repositories.jsx';
+import SingleRepoDetails from '../Pages/SingleRepoDetails.jsx';
 import AppOutlet from '../component/AppOutlet.jsx';
-import FourOfour from '../component/FourOfour.jsx';
+import FourOfour from '../Pages/FourOfour.jsx';
 
 function App() {
   const [repos, setRepos] = useState([]);

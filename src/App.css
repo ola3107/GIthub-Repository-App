@@ -1,4 +1,3 @@
-
 header {
   position: fixed;
   width: 100%;
@@ -7,8 +6,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10%;
-  background-color: #747bff;
-} 
+  background-color: #5b6a7a;
+}
 
 header h2 {
   font-size: 1.5rem;
@@ -20,7 +19,7 @@ header h2 span {
   color: white;
 }
 
-.github-icon{
+.github-icon {
   font-size: 1.5rem;
   color: black;
 }
@@ -50,36 +49,36 @@ button {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 5px;
-  background-color: goldenrod;
-  color: black;
+  background-color: #5094af;
+  color: #e9f1f5;
   font-weight: bold;
   font-size: 17px;
   cursor: pointer;
   transition: all 0.5s ease;
 }
 
-.open-sidebar{
+.open-sidebar {
   display: block;
   font-size: 1.5rem;
   color: black;
   display: none;
 }
 
-.sidebar{
+.sidebar {
   position: fixed;
   top: 0;
   right: 0;
   height: 260px;
   width: 250px;
   z-index: 999;
-  background-color:  #747bff;
-  backdrop-filter: blur(5px);
-  box-shadow: -10px 0 20px rgba(0,0,0,0.2);
-  padding: 10px 10px; 
+  background-color: #5b6a7a;
+  box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2);
+  padding: 10px 10px;
   display: none;
+  border-radius: 10px;
 }
 
-.sidebar ul{
+.sidebar ul {
   width: 100%;
   margin-block: 10px;
   display: flex;
@@ -87,13 +86,13 @@ button {
   height: 400px;
 }
 
-.sidebar .close-sidebar{
+.sidebar .close-sidebar {
   font-size: 2rem;
   color: black;
   font-weight: 900;
 }
 
-.sidebar ul li{
+.sidebar ul li {
   width: 100%;
   color: white;
   margin-block-start: 10px;
@@ -105,39 +104,38 @@ button {
   margin-top: 15px;
 }
 
-
-.sidebar ul button{
+.sidebar ul button {
   margin-block-start: 15px;
   margin-inline-start: 10px;
 }
 
-section.home-main{
+section.home-main {
   margin-inline: 5%;
 }
 
-section .welcome{
+section .welcome {
   text-align: center;
   margin-top: 180px;
   margin-inline: auto;
   max-width: 600px;
 }
 
-.welcome h1{
+.welcome h1 {
   font-size: calc(35px + 2vw);
   font-weight: 700;
   line-height: 1.2;
-  color: blue;
+  color: #e9f1f5;
 }
 
-.welcome p{
+.welcome p {
   font-size: 20px;
   line-height: 1.2;
   font-style: italic;
   margin-top: 10px;
-  color: blueviolet;
+  color: #c3cbcf;
 }
 
-.btn-home{
+.btn-home {
   margin-top: 20px;
   margin-inline: auto;
   max-width: 350px;
@@ -146,17 +144,17 @@ section .welcome{
   flex-wrap: wrap;
 }
 
-.btn-home button{
+.btn-home button {
   margin-top: 10px;
 }
 
-.btn-home button:hover{
-  background-color: blue;
+.btn-home button:hover {
+  background-color: #5dc1e4;
   color: white;
 }
 
-footer{
-  background-color: #747bff;
+footer {
+  background-color: #5b6a7a;
   color: white;
   text-align: center;
   padding: 5px 0;
@@ -165,31 +163,26 @@ footer{
   bottom: 0;
 }
 
-footer p{
-  font-size: 1rem;
+footer p {
+  font-size: 0.8rem;
   font-style: italic;
 }
 
-.heart{
-  font-size: 1.2rem;
-  color: red;
-}
-
-footer a{
+footer a {
   color: white;
   font-weight: 700;
 }
 
-footer p a:hover{
+footer p a:hover {
   color: black;
 }
 
-section.main-repo{
+section.main-repo {
   margin-inline: 5%;
   margin-block: 90px;
 }
 
-.repo-head{
+.repo-head {
   text-align: center;
   margin-top: 20px;
   margin-inline: auto;
@@ -197,43 +190,41 @@ section.main-repo{
   line-height: 1;
 }
 
-.repo-head h2{
+.repo-head h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: blue;
+  color: #e9f1f5;
 }
 
-.repo-head p{
+.repo-head p {
   font-size: 1.2rem;
   font-style: italic;
   margin-top: 10px;
-  color: blueviolet;
+  color: #c3cbcf;
 }
 
-.repo-search{
+.repo-search {
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-.search-repo{
+.search-repo {
   width: 250px;
-  border: 1px solid blueviolet;
   border-radius: 5px;
   margin-inline: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px;
-
 }
 
-.search-repo input{
+.search-repo input {
   border-radius: 5px;
   width: 80%;
   border: none;
+  background-color: aliceblue;
   margin-right: 10px;
   outline: none;
   padding-inline: 10px;
@@ -241,8 +232,7 @@ section.main-repo{
   padding-block: 10px;
 }
 
-.repo-search button{
-  background-color: goldenrod;
+.repo-search button {
   color: white;
   border: none;
   border-radius: 5px;
@@ -250,28 +240,23 @@ section.main-repo{
   cursor: pointer;
 }
 
-.reload-btn{
+.reload-btn {
   font-weight: 900;
 }
 
-div.no-repo-found{
+div.no-repo-found {
   text-align: center;
   margin-top: 10px;
   display: none;
 }
 
-.no-repo-found p{
+.no-repo-found p {
   font-size: 1.5rem;
   font-weight: 700;
   color: red;
 }
 
-.no-repo-found p span{
-  color: blue;
-}
-
-
-section.repo{
+section.repo {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -280,48 +265,49 @@ section.repo{
   width: 100%;
 }
 
-.repo-item{
+.repo-item {
   width: 500px;
   max-width: 500px;
   padding: 20px 20px;
   border: 1px dotted rgba(126, 65, 184, 0.72);
   border-radius: 5px;
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+  box-shadow: 3px 3px 4px 5px rgba(0, 0, 0, 0.1);
   margin-block: 10px;
-  
 }
 
-.repo-item-top{
+.repo-item-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.repo-item-top h2{
+.repo-item-top h2 .repo-link {
   font-size: 1.2rem;
   font-weight: bolder;
-  color: blue;
+  color: black;
   margin-block: 10px;
+  text-decoration: none;
 }
 
-.repo-item-top p{
+.repo-item-top p {
   font-size: 1rem;
   font-style: italic;
-  color: blueviolet;
-  border: 1px solid blueviolet;
+  color: #e9f1f5;
+  border: 1px solid #e9f1f5;
   padding: 1px 10px;
   border-radius: 20px;
+  font-weight: 700;
 }
 
-.repo-item p{
+.repo-item p {
   font-size: 1rem;
   margin-top: 10px;
+  font-weight: 900;
 }
 
-
-.repo_details{
+.repo_details {
   width: 80%;
-  border: 1px solid blueviolet;
+  border: 1px solid black;
   border-radius: 5px;
   border-radius: 10px;
   padding: 20px 20px;
@@ -329,19 +315,19 @@ section.repo{
   margin-top: 150px;
 }
 
-.repo_details h1{
+.repo_details h1 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: blue;
+  color: aliceblue;
   text-align: center;
 }
 
-.repo_details .details__name p{
+.repo_details .details__name p {
   font-size: 1.2rem;
   text-align: center;
 }
 
-.repo_details .details__info{
+.repo_details .details__info {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -350,74 +336,70 @@ section.repo{
   text-align: center;
 }
 
-.details__info .details__info__item{
-  border: 1px solid blueviolet;
+.details__info .details__info__item {
+  border: 1px solid black;
   margin-top: 20px;
   width: 100px;
+  font-weight: 700;
 }
 
-div.repo_url{
+div.repo_url {
   margin-top: 55px;
   text-align: center;
-
 }
 
-.repo_details a{
+.repo_details a {
   text-align: center;
   text-decoration: none;
   padding: 10px 20px;
-  border: 1px solid blueviolet;
-  background-color: goldenrod;
-  color: black;
+  background-color: #5094af;
+  color: white;
   border-radius: 5px;
   font-weight: 700;
 }
 
-.btn-repo{
+.btn-repo {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-inline: auto;
   width: 150px;
-
 }
 
-section .button-control select{
+section .button-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+section .button-control select {
   padding: 5px 10px;
-  border: 1px solid blueviolet;
+  border: 1px solid #5dc1e4;
   border-radius: 5px;
-  margin-right: 10px;
-
+  background-color: aliceblue;
+  font-weight: 700;
 }
 
-.error-page{
+.error-page {
   text-align: center;
   margin-top: 200px;
   padding-inline: 5%;
 }
 
-.error-page h1{
+.error-page h1 {
   font-size: 3rem;
   font-weight: 700;
 }
 
-.error-page p{
+.error-page p {
   font-size: 1.5rem;
   font-style: italic;
   margin-top: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1125px){
+@media screen and (max-width: 1125px) {
   header {
     padding: 1rem 5%;
   }
@@ -426,63 +408,55 @@ section .button-control select{
     font-size: 1.2rem;
   }
 
-  .repo-item{
+  .repo-item {
     padding: 10px 10px;
     max-width: 400px;
     width: 350px;
   }
 
-  .repo-item h2{
+  .repo-item h2 {
     font-size: 1rem;
   }
 
-  .repo-item p{
+  .repo-item p {
     font-size: 0.8rem;
   }
-
 }
 
-@media screen and (max-width: 876px){
-  .open-sidebar{
+@media screen and (max-width: 876px) {
+  .open-sidebar {
     display: block;
   }
 
-  header nav .large-screen, .btn-large-screen{
+  header nav .large-screen,
+  .btn-large-screen {
     display: none;
   }
 
-  .repo-item{
+  .repo-item {
     min-width: 300px;
   }
 
-  .repo-item p{
+  .repo-item p {
     margin-top: 5px;
   }
 }
 
-@media screen and (max-width: 480px){
-  .sidebar{
+@media screen and (max-width: 480px) {
+  .sidebar {
     display: none;
   }
 
-  .repo-item{
+  .repo-item {
     padding: 10px 10px;
     width: 100%;
   }
 
-  .repo-item h2{
+  .repo-item h2 {
     margin-block: 0;
   }
 
-  .repo-item p{
-    margin-top: 0;
+  .repo-item p {
+    margin-top: 3px;
   }
-
 }
-
-
-
-
-
-
-

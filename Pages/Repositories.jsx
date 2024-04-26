@@ -44,13 +44,15 @@ const Repositories = () => {
         return (
             <div className="repo-item"  key={item.name}>
                 <div className="repo-item-top">
-                    <Link to={`/SingleRepoDetails/${item.name}`}>
-                        <h2>{item.name}</h2>
-                    </Link>
+                    <h2>
+                        <Link to={`/SingleRepoDetails/${item.name}`} className="repo-link">
+                            {item.name}
+                        </Link>
+                    </h2>
                     <p>{item.visibility}</p>
                 </div>
-                <p><strong>{item.language}</strong></p>
-                <p><strong>Created At:</strong> {item.created_at}</p>
+                <p>{item.language}</p>
+                <p>Created At: {item.created_at}</p>
             </div>
         )
     })
@@ -134,22 +136,22 @@ const Repositories = () => {
                 <p>Here you can view all the repositories available.</p>
             </section>
             <form className="repo-search" onSubmit={handleSubmit}>
-                <button onClick={handleReset}>reset</button>
                 <div className="search-repo">
                     <input type="text" placeholder="Search Repositories" value={value} onChange={(e) => setValue(e.target.value)}/>
                     <button type="submit" className="search-icon">
                         <FaSearch />
                     </button>
                 </div>
-                <div className="button-control">
+                <button onClick={handleReset}>Reset</button>
+            </form>
+            <div className="button-control">
                 <select onChange={(e) => handleFilter(e.target.value)}>
-                    <option value="">filter by language</option>
+                    <option value="">Filter by Language</option>
                     <option value="JavaScript">JavaScript</option>
                     <option value="CSS">CSS</option>
                     <option value="HTML">HTML</option>
                 </select>
-                </div>
-            </form>
+            </div>
             <div className="no-repo-found">
                 <p>Sorry!!!, No Repo for <span>{value}</span> found</p>
             </div>

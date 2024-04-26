@@ -10,7 +10,7 @@ const Home = () => {
                 <p>Here you can create new repositories, view existing repositories and go to my Github page.</p>
                 <div className="btn-home">
                     <button onClick={redirectToGithub}>Go to Github</button>
-                    <Link to="/Repositories"><button>see Repositories</button></Link>
+                    <Link to="/Repositories"><button>See Repositories</button></Link>
                 </div>
             </div>
         </section>
