@@ -284,7 +284,7 @@ section.repo {
 .repo-item-top h2 .repo-link {
   font-size: 1.2rem;
   font-weight: bolder;
-  color: black;
+  color: #e9f1f5;
   margin-block: 10px;
   text-decoration: none;
 }
@@ -292,17 +292,18 @@ section.repo {
 .repo-item-top p {
   font-size: 1rem;
   font-style: italic;
-  color: #e9f1f5;
-  border: 1px solid #e9f1f5;
+  color: black;
+  border: 1px solid;
   padding: 1px 10px;
   border-radius: 20px;
   font-weight: 700;
 }
 
-.repo-item p {
+.repo-item .repo-body p {
   font-size: 1rem;
   margin-top: 10px;
   font-weight: 900;
+  color: #e9f1f5;
 }
 
 .repo_details {

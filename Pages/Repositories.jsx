@@ -51,8 +51,10 @@ const Repositories = () => {
                     </h2>
                     <p>{item.visibility}</p>
                 </div>
-                <p>{item.language}</p>
-                <p>Created At: {item.created_at}</p>
+                <div className="repo-body">
+                    <p>{item.language}</p>
+                    <p>Created At: {item.created_at}</p>
+                </div>
             </div>
         )
     })
